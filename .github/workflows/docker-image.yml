@@ -27,10 +27,7 @@ jobs:
     #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: Build Docker Image
       run: |
-        docker build -t jogegoca/graphql-actions:0.0.2 .
+        docker build -t jogegoca/docker-graphql:0.0.2 .
     - name: Push Docker Image
-      env:
-        DOCKER_USER: ${{ secrets.DOCKER_USER }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        docker push jogegoca/graphql-actions:0.0.2
+        docker push jogegoca/docker-graphql:0.0.2
