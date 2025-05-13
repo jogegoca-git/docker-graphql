@@ -33,4 +33,4 @@ jobs:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       run: |
-        docker push jogegoca/graphql-actions:0.0.2 .
+        docker push jogegoca/graphql-actions:0.0.2
